@@ -10,11 +10,6 @@ import { PhoneIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  fetchUserProfiles,
-  selectUserProfiles,
-} from "../../redux/store/userSlice";
 import axios from "axios";
 
 const UserDetailsCard = ({ userId }) => {
@@ -28,13 +23,6 @@ const UserDetailsCard = ({ userId }) => {
     setIsModalOpen(true);
   };
   AOS.init();
-
-  // const dispatch = useDispatch();
-  // const userProfiles = useSelector(selectUserProfiles);
-
-  // useEffect(() => {
-  //   dispatch(fetchUserProfiles());
-  // }, [userId]);
 
   useEffect(() => {
     axios.get("/fakeData.json").then((response) => {

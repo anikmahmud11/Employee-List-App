@@ -15,15 +15,6 @@ export const fetchUserProfiles = createAsyncThunk(
   }
 );
 
-// const initialState = {
-//   userProfiles: fakeUserProfile,
-// };
-
-// const userSlice = createSlice({
-//   name: "user",
-//   initialState,
-//   reducers: {},
-// });
 const initialState = {
   userProfiles: [],
   loading: false,

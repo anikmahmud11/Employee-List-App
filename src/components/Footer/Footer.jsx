@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
         <p>Phone: +1 (123) 456-7890</p>
       </div>
       <div className=" container mx-auto text-center">
-        <a href="#" className="text-white hover:text-gray-400 mx-2">
+        <Link href="#" className="text-white hover:text-gray-400 mx-2">
           Privacy Policy
-        </a>
-        <a href="#" className="text-white hover:text-gray-400 mx-2">
+        </Link>
+        <Link href="#" className="text-white hover:text-gray-400 mx-2">
           Terms of Service
-        </a>
+        </Link>
       </div>
     </footer>
   );

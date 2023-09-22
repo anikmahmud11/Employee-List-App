@@ -28,7 +28,7 @@ const About = () => {
           {/* Right Section - Image */}
           <div className="lg:w-1/2">
             <img
-              src="https://via.placeholder.com/400x400" // Replace with your image URL
+              src="https://via.placeholder.com/400x400"
               alt="Company Image"
               className="rounded-lg shadow-lg mx-auto lg:mx-0"
             />
